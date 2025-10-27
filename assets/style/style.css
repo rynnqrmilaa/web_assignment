@@ -24,24 +24,24 @@ body {
   padding: 0;
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
-  -webkit-text-size-adjust: 100%; /* Prevent Safari zooming on text */
+  -webkit-text-size-adjust: 100%;
 }
 
-/* ===== HEADER ===== */
+/*HEADER*/
 header {
   background-color: var(--header-bg);
   color: var(--header-text);
-  padding: 20px 15px;
-  text-align: center;
+  padding: 20px 30px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  text-align: center;
 }
 
 .header-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -80,11 +80,12 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 60px;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* ===== SECTIONS ===== */
+/*SECTIONS*/
 section {
   background-color: var(--section-bg);
   width: 85%;
@@ -101,7 +102,7 @@ h2 {
   color: var(--text-color);
 }
 
-/* ===== ABOUT ===== */
+/*ABOUT*/
 .about-container {
   display: flex;
   flex-direction: column;
@@ -118,7 +119,7 @@ h2 {
   border: 3px solid var(--header-bg);
 }
 
-/* ===== GALLERY ===== */
+/*GALLERY*/
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +161,7 @@ body.dark-mode .gallery figure {
   color: var(--text-color);
 }
 
-/* ===== EMAIL BUTTON ===== */
+/*EMAIL BUTTON*/
 .email-btn {
   display: inline-block;
   background-color: var(--header-bg);
@@ -178,7 +179,7 @@ body.dark-mode .gallery figure {
   transform: scale(1.05);
 }
 
-/* ===== FOOTER ===== */
+/*FOOTER*/
 footer {
   text-align: center;
   padding: 15px;
@@ -188,31 +189,37 @@ footer {
   transition: background-color 0.3s;
 }
 
-/* ===== RESPONSIVE FIXES ===== */
-
-/* Tablets */
+/*RESPONSIVE FIXES*/
 @media (max-width: 1024px) {
   .gallery figure {
     width: 45%;
   }
 }
 
-/* iPhone / small devices */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    padding: 15px;
+    padding: 15px 20px;
   }
 
   .header-right {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    top: 10px;
+    right: 15px;
+    gap: 8px;
+  }
+
+  .btn--cv {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .theme-toggle {
+    font-size: 18px;
+    padding: 4px 6px;
   }
 
   .welcome {
+    margin-top: 50px;
     font-size: 20px;
-    white-space: normal;
   }
 
   section {
@@ -225,7 +232,6 @@ footer {
   }
 }
 
-/* Very small phones */
 @media (max-width: 480px) {
   .welcome {
     font-size: 18px;
@@ -255,4 +261,3 @@ footer {
     font-size: 14px;
   }
 }
-
