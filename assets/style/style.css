@@ -26,6 +26,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* HEADER */
 header {
   background-color: var(--header-bg);
   color: var(--header-text);
@@ -83,6 +84,7 @@ header {
   white-space: nowrap;
 }
 
+/* MAIN SECTIONS */
 section {
   background-color: var(--section-bg);
   width: 85%;
@@ -99,6 +101,7 @@ h2 {
   color: var(--text-color);
 }
 
+/* ABOUT */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -115,6 +118,7 @@ h2 {
   border: 3px solid var(--header-bg);
 }
 
+/* GALLERY */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -156,6 +160,7 @@ body.dark-mode .gallery figure {
   color: var(--text-color);
 }
 
+/* EMAIL BUTTON */
 .email-btn {
   display: inline-block;
   background-color: var(--header-bg);
@@ -173,6 +178,7 @@ body.dark-mode .gallery figure {
   transform: scale(1.05);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
@@ -180,4 +186,88 @@ footer {
   color: var(--header-text);
   margin-top: 20px;
   transition: background-color 0.3s;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .gallery figure {
+    width: 45%;
+  }
+
+  .welcome {
+    font-size: 22px;
+  }
+
+  .btn--cv {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .theme-toggle {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+}
+
+/* Large phones (≤768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .header-right {
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .welcome {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .gallery figure {
+    width: 100%;
+  }
+}
+
+/* Small phones (≤480px) */
+@media (max-width: 480px) {
+  .welcome {
+    font-size: 18px;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .btn--cv {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .theme-toggle {
+    font-size: 16px;
+    padding: 4px 6px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .email-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
 }
