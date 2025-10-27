@@ -4,6 +4,7 @@
   --section-bg: lightpink;
   --header-bg: palevioletred;
   --header-text: white;
+  --accent-color: deeppink;
 }
 
 body.dark-mode {
@@ -12,6 +13,7 @@ body.dark-mode {
   --section-bg: rosybrown;
   --header-bg: mediumvioletred;
   --header-text: lavenderblush;
+  --accent-color: lightpink;
 }
 
 body {
@@ -27,26 +29,36 @@ body {
 header {
   background-color: var(--header-bg);
   color: var(--header-text);
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
   position: relative;
 }
 
-h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 30px;
-  color: var(--text-color);
-}
-
-.theme-toggle {
+.header-right {
   position: absolute;
   top: 15px;
   right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn--cv {
+  background-color: lightpink;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn--cv:hover {
+  background-color: mistyrose;
+}
+
+.theme-toggle {
   background: var(--section-bg);
   color: var(--text-color);
   border: none;
@@ -61,6 +73,16 @@ h2 {
   background-color: mistyrose;
 }
 
+.welcome {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 section {
   background-color: var(--section-bg);
   width: 85%;
@@ -69,6 +91,12 @@ section {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--text-color);
 }
 
 .about-container {
@@ -82,7 +110,7 @@ section {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 50% 20%; /* Adjust visible area of photo */
+  object-position: 50% 20%;
   margin-bottom: 15px;
   border: 3px solid var(--header-bg);
 }
@@ -143,10 +171,6 @@ body.dark-mode .gallery figure {
 .email-btn:hover {
   background-color: rosybrown;
   transform: scale(1.05);
-}
-
-body.dark-mode .email-btn:hover {
-  background-color: dimgray; 
 }
 
 footer {
