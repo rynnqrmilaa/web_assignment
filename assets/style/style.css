@@ -24,24 +24,27 @@ body {
   padding: 0;
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
+  -webkit-text-size-adjust: 100%; /* Prevent Safari zooming on text */
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header {
   background-color: var(--header-bg);
   color: var(--header-text);
-  padding: 30px 0;
+  padding: 20px 15px;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-right {
-  position: absolute;
-  top: 15px;
-  right: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .btn--cv {
@@ -75,16 +78,15 @@ header {
 }
 
 .welcome {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* MAIN SECTIONS */
+/* ===== SECTIONS ===== */
 section {
   background-color: var(--section-bg);
   width: 85%;
@@ -101,7 +103,7 @@ h2 {
   color: var(--text-color);
 }
 
-/* ABOUT */
+/* ===== ABOUT ===== */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -118,7 +120,7 @@ h2 {
   border: 3px solid var(--header-bg);
 }
 
-/* GALLERY */
+/* ===== GALLERY ===== */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +162,7 @@ body.dark-mode .gallery figure {
   color: var(--text-color);
 }
 
-/* EMAIL BUTTON */
+/* ===== EMAIL BUTTON ===== */
 .email-btn {
   display: inline-block;
   background-color: var(--header-bg);
@@ -178,7 +180,7 @@ body.dark-mode .gallery figure {
   transform: scale(1.05);
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 15px;
@@ -188,47 +190,31 @@ footer {
   transition: background-color 0.3s;
 }
 
-/* =======================
-   RESPONSIVE DESIGN
-======================= */
+/* ===== RESPONSIVE FIXES ===== */
 
-/* Tablet (≤1024px) */
+/* Tablets */
 @media (max-width: 1024px) {
   .gallery figure {
     width: 45%;
   }
-
-  .welcome {
-    font-size: 22px;
-  }
-
-  .btn--cv {
-    font-size: 13px;
-    padding: 6px 12px;
-  }
-
-  .theme-toggle {
-    font-size: 18px;
-    padding: 5px 8px;
-  }
 }
 
-/* Large phones (≤768px) */
+/* iPhone / small devices */
 @media (max-width: 768px) {
   header {
-    padding: 20px 10px;
+    flex-direction: column;
+    padding: 15px;
   }
 
   .header-right {
-    position: static;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
+    flex-wrap: wrap;
   }
 
   .welcome {
     font-size: 20px;
-    display: block;
-    text-align: center;
+    white-space: normal;
   }
 
   section {
@@ -241,7 +227,7 @@ footer {
   }
 }
 
-/* Small phones (≤480px) */
+/* Very small phones */
 @media (max-width: 480px) {
   .welcome {
     font-size: 18px;
@@ -253,7 +239,7 @@ footer {
   }
 
   .btn--cv {
-    padding: 5px 10px;
+    padding: 6px 10px;
     font-size: 12px;
   }
 
