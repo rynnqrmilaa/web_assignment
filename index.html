@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +11,13 @@
 <body>
 
   <header>
-    <p class="welcome">Welcome to My Personal CV Website!</p>
-    <button id="themeToggle" class="theme-toggle" title="Switch Theme">🌙</button>
+    <div class="header-right">
+      <a href="Rynna Qarmila - CV.pdf" download class="btn--cv" title="Click to download my CV"> Download CV</a>
+      <button id="themeToggle" class="theme-toggle" title="Switch Theme">🌙</button>
+    </div>
+    <p class="welcome"><span id="typed"></span></p>
   </header>
+
 
   <section id="about">
     <h2>About Me</h2>
@@ -22,7 +26,7 @@
       <div class="biodata">
         <p><strong>Name:</strong> Rynna Qarmila binti Ruslan</p>
         <p><strong>Age:</strong> 19 years old</p>
-        <p><strong>Programme:</strong> Bachelor's of Technology in Information Technology</p>
+        <p><strong>Programme:</strong> Bachelor's of Information Technology (Hons.)</p>
         <p><strong>University:</strong> Universiti Teknologi PETRONAS</p>
         <p><strong>Hometown:</strong> Kuantan, Pahang</p>
         <p><strong>Hobbies:</strong> Playing netball</p>
@@ -33,103 +37,50 @@
   <section id="education">
     <h2>Education</h2>
     <ul>
-      <li>2010-2012 Assunta Kindergarten</li>
-      <li>2013-2018: SK Assunta Convent</li>
-      <li>2019-2023: SM Sains Johor</li>
-      <li>2024-2028: Universiti Teknologi PETRONAS</li>
+      <li>2010–2012: Assunta Kindergarten</li>
+      <li>2013–2018: SK Assunta Convent</li>
+      <li>2019–2023: SM Sains Johor</li>
+      <li>2024–2028: Universiti Teknologi PETRONAS</li>
     </ul>
+
     <div class="gallery">
-      <figure>
-        <img src="assets/images/kinder.jpg" alt="Dean's List Certificate">
-        <figcaption>Assunta Kindergarten</figcaption>
-      </figure>
-            <figure>
-        <img src="assets/images/primary.jpg" alt="Dean's List Certificate">
-        <figcaption>SK Assunta Convent</figcaption>
-      </figure>
-            <figure>
-        <img src="assets/images/high.jpg" alt="Dean's List Certificate">
-        <figcaption>SM Sains Johor</figcaption>
-      </figure>
-            <figure>
-        <img src="assets/images/dean.jpg" alt="Dean's List Certificate">
-        <figcaption>Universiti Teknologi PETRONAS</figcaption>
-      </figure>
+      <figure><img src="assets/images/kinder.jpg" alt="Assunta Kindergarten"><figcaption>Assunta Kindergarten</figcaption></figure>
+      <figure><img src="assets/images/primary.jpg" alt="SK Assunta Convent"><figcaption>SK Assunta Convent</figcaption></figure>
+      <figure><img src="assets/images/high.jpg" alt="SM Sains Johor"><figcaption>SM Sains Johor</figcaption></figure>
+      <figure><img src="assets/images/dean.jpg" alt="Universiti Teknologi PETRONAS"><figcaption>Universiti Teknologi PETRONAS</figcaption></figure>
     </div>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-
     <div class="gallery">
-      <figure>
-        <img src="assets/images/sma.jpg" alt="SMA Award Committee">
-        <figcaption>Short Movie Award, Cert & Prize Committee</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/vsport.jpg" alt="Vsport Committee">
-        <figcaption>Vsport, Activities & Games Committee</figcaption>
-      </figure>
-      <figure>
-        <video width="220" height="160" controls>
-          <source src="assets/images/dte video.mp4" type="video/mp4">
-        </video>
-        <figcaption>DTE Project, Assistant Head of Department for Logistic</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/omc.jpg" alt="Event Sales">
-        <figcaption>Oh My Code Competition 2024</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/netball python.jpg" alt="Netball Tournament">
-        <figcaption>UTPSS 2025, Python's Netball Team</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/run 1.jpg" alt="Fun Run Event">
-        <figcaption>UTP Convo Run 2024</figcaption>
-      </figure>
+      <figure><img src="assets/images/sma.jpg" alt="SMA Award Committee"><figcaption>Short Movie Award – Cert & Prize Committee</figcaption></figure>
+      <figure><img src="assets/images/vsport.jpg" alt="Vsport Committee"><figcaption>Vsport – Activities & Games Committee</figcaption></figure>
+      <figure><video width="220" height="160" controls><source src="assets/images/dte video.mp4" type="video/mp4"></video><figcaption>DTE Project – Assistant Head of Logistics</figcaption></figure>
+      <figure><img src="assets/images/omc.jpg" alt="Oh My Code Competition"><figcaption>Oh My Code Competition 2024</figcaption></figure>
+      <figure><img src="assets/images/netball python.jpg" alt="Netball Tournament"><figcaption>UTPSS 2025 – Python’s Netball Team</figcaption></figure>
+      <figure><img src="assets/images/run 1.jpg" alt="Fun Run Event"><figcaption>UTP Convo Run 2024</figcaption></figure>
     </div>
   </section>
 
   <section id="projects">
-    <h2>Work Experience / Projects </h2>
+    <h2>Work Experience / Projects</h2>
     <div class="gallery">
-      <figure>
-        <img src="assets/images/dte.jpg" alt="DTE Project">
-        <figcaption>DTE Project Contribution</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/tech tts.jpg" alt="Theatre Show Technical Crew">
-        <figcaption>TTS Theatre Show, Technical Crew</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/work.jpg" alt="Work Experience">
-        <figcaption>Entrepreneurship Experience</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/omc.jpg" alt="Event Sales">
-        <figcaption>Oh My Code Competition 2024</figcaption>
-      </figure>
-      <figure>
-        <video width="220" height="160" controls>
-          <source src="assets/images/royal vid.mp4" type="video/mp4">
-        </video>
-        <figcaption>TTS USR at Kampung Kelewang, Royal Belum </figcaption>
-      </figure>
+      <figure><img src="assets/images/dte.jpg" alt="DTE Project"><figcaption>DTE Project Contribution</figcaption></figure>
+      <figure><img src="assets/images/tech tts.jpg" alt="Theatre Show Technical Crew"><figcaption>TTS Theatre Show – Technical Crew</figcaption></figure>
+      <figure><img src="assets/images/work.jpg" alt="Work Experience"><figcaption>Entrepreneurship Experience</figcaption></figure>
+      <figure><img src="assets/images/omc.jpg" alt="Event Sales"><figcaption>Oh My Code Competition 2024</figcaption></figure>
+      <figure><video width="220" height="160" controls><source src="assets/images/royal vid.mp4" type="video/mp4"></video><figcaption>TTS USR – Kampung Kelewang, Royal Belum</figcaption></figure>
     </div>
   </section>
+
 
   <section id="contact">
     <h2>Contact Me</h2>
     <p>If you would like to get in touch, you can reach me directly via email:</p>
-
-    <a href="mailto:rynna_24003201@utp.edu.my?subject=Contact from CV Website&body=Hello Rynna,%0D%0A%0D%0AI would like to get in touch with you..." class="email-btn">
-      📧 Send Email Here!
-    </a>
-
+    <a href="mailto:rynna_24003201@utp.edu.my?subject=Contact from CV Website&body=Hello Rynna, I would like to get in touch with you..." class="email-btn">Send Email Here!</a>
     <p><strong>Email:</strong> <a href="mailto:rynna_24003201@utp.edu.my">rynna_24003201@utp.edu.my</a></p>
     <p><strong>Phone:</strong> +60 17-9884172</p>
-
     <button onclick="scrollToTop()">Back to Top</button>
   </section>
 
@@ -137,6 +88,7 @@
     <p>© 2025 Rynna Qarmila | My Personal CV Website</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
