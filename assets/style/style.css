@@ -42,9 +42,7 @@ header {
 
 .header-right {
   display: flex;
-  align-items: center;
   gap: 10px;
-  justify-content: center;
 }
 
 .btn--cv {
@@ -257,3 +255,4 @@ footer {
     font-size: 14px;
   }
 }
+
